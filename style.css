@@ -1,0 +1,77 @@
+/* 전체 페이지에 대한 기본 설정 */
+body, html {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* 배경색을 밝은 색으로 설정 */
+}
+
+/* 퀴즈 컨테이너 스타일 */
+#quiz-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9; /* 컨테이너 배경색 */
+}
+
+/* 질문 텍스트 스타일 */
+#question-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333; /* 질문 텍스트 색상 */
+}
+
+/* 답변 버튼 스타일 */
+.answer-btn {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #01CF78; /* 브랜드 색상 적용 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #019f5a; /* 버튼 호버 시 색상 변화 */
+}
+
+/* 제출 버튼 스타일 */
+#submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #01CF78; /* 브랜드 색상 적용 */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #019f5a; /* 버튼 호버 시 색상 변화 */
+}
+
+/* 결과 및 이미지 컨테이너 스타일 */
+#result, #image-container {
+    margin-top: 20px;
+}
+
+/* 퀴즈 다시 시작하기 버튼 스타일 */
+.restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #01CF78; /* 브랜드 색상 적용 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+    background-color: #019f5a; /* 버튼 호버 시 색상 변화 */
+}
