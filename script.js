@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message = "영양제에 대해 많이 공부하셨네요! 영양제의 우선순위 정할 때 도움을 받아보세요.";
             imageUrl = "Asset/coupon 3.png";
         }
-        result.innerHTML = `당신의 점수는 ${score}점입니다.<br>${message}`;
+        result.innerHTML = `당신의 점수는 ${score}점입니다.<br>${message}<br><img src="${imageUrl}" alt="Result Image" style="max-width:100%;height:auto;">`;
         
         // 결과 표시 후 버튼 추가
         const restartButton = document.createElement('button');
@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
             btnX.style.display = 'none'; // 시작하기 버튼만 보이도록 설정
             questionText.style.display = 'block';
             result.innerHTML = '';
-            imageContainer.innerHTML = '';
             updateQuestion();
         };
         result.appendChild(document.createElement('br'));
