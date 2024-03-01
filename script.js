@@ -41,10 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let message;
         if (score <= 2) {
             message = "영양제가 어려운 당신, 핏타민의 도움이 필요하겠어요!";
+            imageUrl = "Asset/coupon 1.png";
         } else if (score <= 4) {
             message = "여기저기서 많이 들어봤지만 잘 모르겠는 영양제. 약사님의 도움을 받아보세요.";
+            imageUrl = "Asset/coupon 2.png";
         } else {
             message = "영양제에 대해 많이 공부하셨네요! 영양제의 우선순위 정할 때 도움을 받아보세요.";
+            imageUrl = "Asset/coupon 3.png";
         }
         result.innerHTML = `당신의 점수는 ${score}점입니다.<br>${message}`;
         
