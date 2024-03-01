@@ -61,6 +61,22 @@ body, html {
     margin-top: 20px;
 }
 
+/* 결과 이미지 스타일 */
+#result img {
+    max-width: 100%; /* 이미지의 최대 너비를 화면 너비의 100%로 제한 */
+    height: auto; /* 이미지 높이를 자동으로 조정하여 비율 유지 */
+}
+
+@media (max-width: 768px) {
+    /* 모바일 화면에서의 결과 이미지 스타일 */
+    #result img {
+        max-width: 90%; /* 모바일 화면에서는 이미지의 최대 너비를 90%로 설정 */
+        margin: 0 auto; /* 이미지를 가운데 정렬 */
+    }
+}
+
+
+
 /* 로고 이미지 오른쪽 상단에 추가 */
 .logo-container {
     position: absolute;
