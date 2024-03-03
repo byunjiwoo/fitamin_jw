@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateQuestion() {
         if (currentQuestionIndex === -1) {
-            questionText.innerHTML = "안녕하세요. <br> 지금부터 당신의 영양제 고르기 상태에 대해 물어볼게요! <br> <br>퀴즈를 다 풀면 선물이 있어요.";
+            questionText.innerHTML = "나의 영양제 레벨은 얼마일까? <br> 지금부터 건강을 위한 당신의 영양제 고르기 레벨 테스트를 진행합니다 <br> <br> <br>퀴즈를 다 풀면 선물이 있어요.";
             btnO.textContent = "시작하기";
             btnX.style.display = 'none';
         } else if (currentQuestionIndex < questions.length) {
