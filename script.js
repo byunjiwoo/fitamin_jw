@@ -44,16 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let message;
         if (score <= 4) {
-            message = "영양제가 어려운 당신, 핏타민의 도움이 필요하겠어요!";
+            message = "영양제가 너무너무 어려운 당신, 핏타민이 도와줄게요! <br>어려운 영양제 고민하지 말고 약사 상담을 통해 <br>자기에게 딱 맞는 영양제를 설계해보세요!";
             imageUrl = "Asset/coupon 1.png";
         } else if (score <= 7) {
-            message = "여기저기서 많이 들어봤지만 잘 모르겠는 영양제. 약사님의 도움을 받아보세요.";
+            message = "이리저리 알아봤지만 여전히 당신에게 알쏭달쏭한 영양제, <br>핏타민이 도와줄게요!<br>약사 상담을 통해 <br>당신을 위한 섬세하게 설계된 영양제를 만나보세요!";
             imageUrl = "Asset/coupon 2.png";
         } else {
-            message = "영양제에 대해 많이 공부하셨네요! 영양제의 우선순위 정할 때 도움을 받아보세요.";
+            message = "영양제에 대해 정말 많이 공부했네요!<br> 혹시 너무 많은 영양제로 헷갈리지 않나요? <br>핏타민이 도와줄게요! <br>약사 상담을 통해 중복을 제거하고 <br>당신의 우선순위에 맞춘 영양제를 설계해보세요!";
             imageUrl = "Asset/coupon 3.png";
         }
-        result.innerHTML = `당신의 점수는 ${score}점입니다.<br>${message}<br><img src="${imageUrl}" alt="Result Image" style="auto;height:auto;">`;
+        result.innerHTML = `당신의 영양제 레벨은 Lv.${score} 입니다.<br><br>${message}<br><img src="${imageUrl}" alt="Result Image" style="auto;height:auto;">`;
         
         // 결과 표시 후 버튼 추가
         const restartButton = document.createElement('button');
