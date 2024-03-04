@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { question: "여드름에 먹는 처방약(이소트레티노인)과 비타민A는 궁합이 잘 맞아요. ", answer: "X" },
         { question: "마그네슘을 과하게 먹으면 변비가 생길 수 있어요.", answer: "X" },
         { question: "비타민B군이 들어간 영양제를 먹고 소변색이 노랗다면 병원에 가야해요.", answer: "X" },
-        { question: "오메가3를 먹을 때 가장 좋은 시간은 아침 공복이에요.", answer: "X" }
+        { question: "오메가3를 먹기 위한 가장 좋은 시간은 아침 공복이에요.", answer: "X" }
     ];
 
     let currentQuestionIndex = -1;
@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let message;
         if (score <= 4) {
-            message = "영양제가 너무너무 어려운 당신, 핏타민이 도와줄게요! <br>어려운 영양제 고민하지 말고 약사 상담을 통해 <br>자기에게 딱 맞는 영양제를 설계해보세요!";
+            message = "영양제가 너무너무 어려운 당신, <br> 핏타민이 도와줄게요! <br>어려운 영양제 고민하지 말고 약사 상담을 통해 <br>자기에게 딱 맞는 영양제를 설계해보세요!";
             imageUrl = "Asset/coupon 1.png";
         } else if (score <= 7) {
-            message = "이리저리 알아봤지만 여전히 당신에게 알쏭달쏭한 영양제, <br>핏타민이 도와줄게요!<br>약사 상담을 통해 <br>당신을 위한 섬세하게 설계된 영양제를 만나보세요!";
+            message = "이리저리 알아봤지만 <br> 여전히 당신에게 알쏭달쏭한 영양제, <br>핏타민이 도와줄게요!<br>약사 상담을 통해 <br>당신을 위한 섬세하게 설계된 영양제를 만나보세요!";
             imageUrl = "Asset/coupon 2.png";
         } else {
             message = "영양제에 대해 정말 많이 공부했네요!<br> 혹시 너무 많은 영양제로 헷갈리지 않나요? <br>핏타민이 도와줄게요! <br>약사 상담을 통해 중복을 제거하고 <br>당신의 우선순위에 맞춘 영양제를 설계해보세요!";
