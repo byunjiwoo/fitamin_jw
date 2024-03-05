@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
         questionText.style.display = 'none';
 
         let message;
-        if (score <= 4) {
+        if (score < 4) {
             message = "영양제가 너무너무 어려운 당신, <br> 핏타민이 도와줄게요! <br><br>어려운 영양제 고민하지 말고 <br>약사 상담을 통해 <br>자기에게 딱 맞는 영양제를 설계해보세요!<br><br>";
             imageUrl = "Asset/coupon 1.png";
-        } else if (score <= 7) {
+        } else if (score < 7) {
             message = "이리저리 알아봤지만 <br> 여전히 당신에게 알쏭달쏭한 영양제, <br>핏타민이 도와줄게요!<br><br>약사 상담을 통해 <br>당신을 위한 섬세하게 <br> 설계된 영양제를 만나보세요!";
             imageUrl = "Asset/coupon 2.png";
         } else {
